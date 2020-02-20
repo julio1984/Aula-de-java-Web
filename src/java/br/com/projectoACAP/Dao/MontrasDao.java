@@ -22,7 +22,7 @@ public class MontrasDao {
 		Connection conexao = Factory.conectar();
 
 		PreparedStatement pst = conexao.prepareStatement(sql.toString());
-		pst.setLong(1, mo.getUtilizadores().getIdutilizador());
+		
 		pst.setInt(1, mo.getData_actualizacao());
 		pst.executeUpdate();
 
@@ -39,7 +39,7 @@ public class MontrasDao {
 		PreparedStatement pst = conexao.prepareStatement(sql.toString());
 		pst.setLong(1, mo.getIdmontra());
 		pst.setInt(2, mo.getData_actualizacao());
-		pst.setLong(3, mo.getUtilizadores().getIdutilizador());
+		
 
 		pst.executeUpdate();
 		System.out.println("O montra foi actualizado com sucesso.");
@@ -110,7 +110,7 @@ public class MontrasDao {
 			
 			Montras mo = new Montras();
 			mo.setIdmontra(resultado.getLong("idmontra"));
-			mo.setUtilizadores(ut);
+			
 			lista.add(mo);
 		}
 
@@ -127,7 +127,7 @@ public class MontrasDao {
 		Connection conexao = Factory.conectar();
 
 		PreparedStatement pst = conexao.prepareStatement(sql.toString());
-		pst.setString(1, "%" + mo.getUtilizadores().getIdutilizador() + "%");
+		//pst.setString(1, "%" + mo.getUtilizadores().getIdutilizador() + "%");
 
 		ResultSet resultado = pst.executeQuery();
 		ArrayList<Montras> listar = new ArrayList<Montras>();
@@ -142,7 +142,7 @@ public class MontrasDao {
 			Montras m = new Montras();
 			m.setIdmontra(resultado.getLong("idmontra"));
 			m.setData_actualizacao(resultado.getInt("data_actualizacao"));
-			m.setUtilizadores(ut);
+			//m.setUtilizadores(ut);
 			
 		
 			listar.add(m);
