@@ -170,7 +170,7 @@ public class vendaDao {
 			Montras mo = new Montras();
 			mo.setData_actualizacao(resultado.getInt("data_actulizacao"));
 			mo.setIdmontra(resultado.getLong("idmontra"));
-			mo.setUtilizadores(ut);
+			//mo.setUtilizadores(ut);
 			
 			Vendas v = new Vendas();
 			v.setCliente(c);
@@ -277,7 +277,7 @@ public class vendaDao {
 			Montras mo = new Montras();
 			mo.setData_actualizacao(resultado.getInt("data_actulizacao"));
 			mo.setIdmontra(resultado.getLong("idmontra"));
-			mo.setUtilizadores(ut);
+			//mo.setUtilizadores(ut);
 			
 			Vendas vend = new Vendas();
 			v.setCliente(c);

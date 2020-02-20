@@ -61,11 +61,11 @@
                 <li role="separator" class="divider"></li>
               
                  <li class="dropdown-header">PRODUTOS SISTEMA</li>
-                 <li><a href="#">Produtos</a></li>
+                 <li><a href="Produtos.jsp">Produtos</a></li>
                 <li><a href="#">Categoria dos Produtos</a></li>
                 
                  <li><a href="#">produtos em Destaques</a></li>
-                <li><a href="#">Produtos em Stock</a></li>
+                <li><a href="produto_Stock.jsp">Produtos em Stock</a></li>
                 <li role="separator" class="divider"></li>
                
                 <li class="dropdown-header">UTILIZADORES DO SISTEMA</li>
@@ -104,7 +104,7 @@
               </ul>
             </li>
             
-             <li><a href="#contact">Contacto</a></li>
+             <li><a href="contato.jsp">Contacto</a></li>
              <li><a href="index.jsp">Administração</a></li>
           </ul>
         </div><!--/.nav-collapse -->
